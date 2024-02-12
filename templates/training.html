@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-    {% if 'инженер' in prof or 'строитель' in prof %}
-        <h2 class="alert alert-danger" role="alert" align="center">Инженерные технологии</h2>
-        <img src="/static/img/up.png" alt="Здесь картинка инженеров">
-    {%else%}
-        <h2 class="alert alert-danger" role="alert" align="center">Научные симуляторы</h2>
-        <img src="/static/img/down.png" alt="Здесь картинка не инженеров">
+{% if 'инженер' in prof or 'строитель' in prof %}
+<h2 class="alert alert-danger" role="alert" align="center">Инженерные технологии</h2>
+<img src="/static/img/up.png" alt="Здесь картинка инженеров">
+{%else%}
+<h2 class="alert alert-danger" role="alert" align="center">Научные симуляторы</h2>
+<img src="/static/img/down.png" alt="Здесь картинка не инженеров">
 {% endif %}
 {% endblock %}
