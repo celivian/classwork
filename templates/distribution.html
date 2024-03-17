@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 style="text-align: center;">Размещение по каютам</h1>
+{% set kaut = "Каюта №" %}
+<div style="margin-left: 25%;">
+    {% for user in user_list %}
+    <h5>{{ user }} - {{ kaut }} {{ loop.index }} {% if loop.first %} - капитан корабля {% endif %}
+    </h5>
+    {% endfor %}
+</div>
+{% endblock %}
